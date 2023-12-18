@@ -1,0 +1,26 @@
+
+nav {
+  display: flex;
+  justify-content: space-around; 
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 10px; /*  spacing between items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* text color */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #61dafb; /* hoved color*/
+}
