@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/home';
-import About from './components/about';
-import Finances from './components/finances';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/home";
+import About from "./components/about";
+import Finances from "./components/finances";
+import "./App.css";
 
 const App = () => {
   return (
@@ -12,13 +12,15 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="Title">
+                BudgetBrain
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">Our Tools </Link>
             </li>
             <li>
-              <Link to="/finances">Finances</Link>
+              <Link to="/finances">Sign Up </Link>
             </li>
           </ul>
         </nav>
