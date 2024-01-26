@@ -1,26 +1,80 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #9aaf9f;
+}
 
 nav {
+  background-color: #46664d;
+  padding: 20px;
   display: flex;
-  justify-content: space-around; 
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15pt;
 }
 
-nav ul {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-right: 20px;
   list-style: none;
-  display: flex;
-  padding: 0;
 }
 
-nav li {
-  margin-right: 10px; /*  spacing between items */
-}
-
-nav a {
+.Title {
+  color: white;
   text-decoration: none;
-  color: #333; /* text color */
-  font-weight: bold;
+  font-size: 1.5em;
 }
 
-nav a:hover {
-  color: #61dafb; /* hoved color*/
+a {
+  color: white;
+  text-decoration: none;
+}
+.Links {
+  float: right;
+}
+
+/* Move the last two items to the right */
+ul li:last-child {
+  margin-left: auto;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+  li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Reset margin for the last child in smaller screens */
+  ul li:last-child {
+    margin-left: 0;
+  }
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 16px;
+  background-color: #e4f1fe;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 350px; /* Set maximum width to maintain a reasonable size */
+  color: black;
+  font-family: "Poppins", sans-serif;
 }
