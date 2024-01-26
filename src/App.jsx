@@ -10,22 +10,24 @@ const App = () => {
     <Router>
       <div>
         <nav>
+          <li>
+            <Link to="/" className="Title">
+              BudgetBrain
+            </Link>
+          </li>
           <ul>
             <li>
-              <Link to="/" className="Title">
-                BudgetBrain
+              <Link to="/about" className="Links">
+                Our Tools{" "}
               </Link>
             </li>
             <li>
-              <Link to="/about">Our Tools </Link>
-            </li>
-            <li>
-              <Link to="/finances">Sign Up </Link>
+              <Link to="/finances" className="Links">
+                Sign Up{" "}
+              </Link>
             </li>
           </ul>
         </nav>
-
-        <hr />
 
         <Routes>
           <Route path="/" element={<Home />} />
